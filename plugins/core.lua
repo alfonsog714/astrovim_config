@@ -20,28 +20,28 @@ return {
       return opts
     end,
   },
-  {
-    "nvim-neorg/neorg",
-    ft = "norg",
-    cmd = "Neorg",
-    priority = 30,
-    dependencies = { { "nvim-lua/plenary.nvim" } },
-    config = function()
-      require("neorg").setup {
-        load = {
-          ["core.defaults"] = {},
-          ["core.norg.concealer"] = {},
-          ["core.norg.dirman"] = {
-            config = {
-              workspaces = {
-                notes = "~/notes",
-              },
-            },
-          },
-        },
-      }
-    end,
-  },
+  -- {
+  --   "nvim-neorg/neorg",
+  --   ft = "norg",
+  --   cmd = "Neorg",
+  --   priority = 30,
+  --   dependencies = { { "nvim-lua/plenary.nvim" } },
+  --   config = function()
+  --     require("neorg").setup {
+  --       load = {
+  --         ["core.defaults"] = {},
+  --         ["core.norg.concealer"] = {},
+  --         ["core.norg.dirman"] = {
+  --           config = {
+  --             workspaces = {
+  --               notes = "~/notes",
+  --             },
+  --           },
+  --         },
+  --       },
+  --     }
+  --   end,
+  -- },
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
